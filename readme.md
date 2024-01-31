@@ -1,0 +1,1 @@
+## Para configurar Socket.io vamos a importar la librería en el Back y esta va a darnos el script del Front.
