@@ -36,12 +36,9 @@ function agregarMensaje(e) {
     const mensaje = document.querySelector('#lbl-mensaje').value;
 
     const obj = {
-        usuario: usuario.value,
-        mensaje: mensaje.value
+        usuario: usuario,
+        mensaje: mensaje
     }
-
-    usuario.value = ' '
-    mensaje.value =' '
 
     socket.emit('nuevo-comentario', obj)
 }

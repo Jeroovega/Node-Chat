@@ -39,7 +39,7 @@ io.on('connection', (socket) => { // escucha el evento de cuanto alguien se cone
     socket.on('nuevo-comentario', data => {
         console.log(data)
         mensajes.push(data)
-        io.sockets.emit('mensajes', mensajes)
+        io.emit('mensajes', mensajes)
     })
 
     // Emitir un mensaje desde el servidor hacia el cliente
